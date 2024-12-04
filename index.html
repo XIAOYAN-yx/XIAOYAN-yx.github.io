@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao Yan - 颜晓</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'HanChanJinShuSong';
+            src: url('寒蝉锦书宋.otf') format('truetype');
+        }
+
+        body {
+            font-family: 'HanChanJinShuSong', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: rgb(55, 65, 81);
+        }
+        
+        .header {
+            background-color: white;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-title {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: rgb(82, 107, 141);
+            font-weight: normal;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(82, 107, 141);
+            padding: 0.5rem;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: #1a73e8;
+        }
+        
+        .menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: rgb(82, 107, 141);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-button {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+                border-bottom: 1px solid #eaeaea;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                padding: 0.5rem 2rem;
+            }
+        }
+        
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+        
+        .profile-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 4px;
+        }
+        
+        .contact-info {
+            margin-top: 2rem;
+        }
+        
+        .contact-info a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        h1 {
+            color: rgb(82, 107, 141);
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .right-column p {
+            font-size: 1.1rem;
+            color: rgb(55, 65, 81);
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        h1, .nav-title, .right-column p {
+            font-family: 'HanChanJinShuSong', sans-serif;
+        }
+        
+        .contact-info i {
+            margin-right: 0.5rem;
+            color: rgb(82, 107, 141);
+            width: 16px;
+            text-align: center;
+        }
+        
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .job-market-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+            font-family: 'HanChanJinShuSong', sans-serif;
+            font-size: 1.1rem;
+        }
+        
+        .job-market-list li {
+            margin-bottom: 1rem;
+        }
+        
+        .job-market-list li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="nav-title">Xiao Yan</a>
+            <button class="menu-button" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#teaching">Teaching</a>
+                <a href="cv.pdf">CV (pdf)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>Xiao Yan(颜晓)</h1>
+        
+        <div class="content-wrapper">
+            <div class="left-column">
+                <img src="yanxiao.jpg" alt="Xiao Yan" class="profile-image">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i><a href="mailto:yanxiao1999@ruc.edu.cn">yanxiao1999@ruc.edu.cn</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>School of Finance</p>
+                    <p><i class="fas fa-university"></i>Renmin University of China</p>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <p>Welcome! I am a PhD candidate in Finance at Renmin University of China.</p>
+
+                <p>My research explores the intersections of Corporate Finance and Political Economics, with a particular focus on the Chinese economy and its historical and institutional dimensions.</p>
+
+                <ul class="job-market-list">
+                    <li style="color: #cc0000;">I am on the 2024-2025 job market.</li>
+                    <li><strong>Job Market Paper:</strong> Coalitions, Retaliation, and Whistleblowing: Evidence from Memorials of Qing China</li>
+                </ul>
+            </div> 
+        </div>
+    </main>
+
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
