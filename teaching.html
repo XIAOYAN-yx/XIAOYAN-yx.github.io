@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiao Yan - 颜晓</title>
+    <title>Teaching - Xiao Yan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @font-face {
@@ -58,7 +58,65 @@
         .nav-links a:hover {
             color: #1a73e8;
         }
-        
+
+        .teaching-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .page-title {
+            color: rgb(82, 107, 141);
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 2rem;
+            margin: 0;
+            background-color: #e5e7eb;
+            font-weight: normal;
+        }
+
+        .section-title {
+            color: rgb(82, 107, 141);
+            font-size: 1.8rem;
+            margin: 1.5rem 0;
+            font-weight: normal;
+        }
+
+        .teaching-position {
+            color: rgb(82, 107, 141);
+            font-size: 1.8rem;
+            margin: 2rem 0;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .course-item {
+            margin: 1rem 0;
+            display: flex;
+            gap: 2rem;
+            justify-content: flex-start;
+        }
+
+        .course-year {
+            min-width: 100px;
+            color: rgb(82, 107, 141);
+            text-align: left;
+        }
+
+        .course-name {
+            color: rgb(55, 65, 81);
+            text-align: left;
+        }
+
         .menu-button {
             display: none;
             background: none;
@@ -68,7 +126,7 @@
             cursor: pointer;
             padding: 0.5rem;
         }
-        
+
         @media (max-width: 768px) {
             .menu-button {
                 display: block;
@@ -94,91 +152,15 @@
             .nav-links a {
                 padding: 0.5rem 2rem;
             }
-        }
-        
-        .main-content {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
 
-        .content-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-        }
-        
-        .profile-image {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 4px;
-        }
-        
-        .contact-info {
-            margin-top: 2rem;
-        }
-        
-        .contact-info a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            .content-wrapper {
-                grid-template-columns: 1fr;
+            .course-item {
+                flex-direction: column;
+                gap: 0.5rem;
             }
-        }
-        
-        h1 {
-            color: rgb(82, 107, 141);
-            font-size: 2.5rem;
-            font-weight: normal;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        
-        .right-column p {
-            font-size: 1.1rem;
-            color: rgb(55, 65, 81);
-            text-align: justify;
-            text-justify: inter-word;
-        }
 
-        h1, .nav-title, .right-column p {
-            font-family: 'HanChanJinShuSong', sans-serif;
-        }
-        
-        .contact-info i {
-            margin-right: 0.5rem;
-            color: rgb(82, 107, 141);
-            width: 16px;
-            text-align: center;
-        }
-        
-        .contact-info p {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .job-market-list {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-            margin: 1rem 0;
-            font-family: 'HanChanJinShuSong', sans-serif;
-            font-size: 1.1rem;
-        }
-        
-        .job-market-list li {
-            margin-bottom: 1rem;
-        }
-        
-        .job-market-list li:last-child {
-            margin-bottom: 0;
+            .course-year {
+                min-width: auto;
+            }
         }
     </style>
 </head>
@@ -198,30 +180,30 @@
         </nav>
     </header>
 
-    <main class="main-content">
-        <h1>Xiao Yan(颜晓)</h1>
-        
-        <div class="content-wrapper">
-            <div class="left-column">
-                <img src="yanxiao2.jpg" alt="Xiao Yan" class="profile-image">
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i><a href="mailto:yanxiao1999@ruc.edu.cn">yanxiao1999@ruc.edu.cn</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i>School of Finance</p>
-                    <p><i class="fas fa-university"></i>Renmin University of China</p>
-                </div>
-            </div>
+    <h1 class="page-title">Teaching</h1>
 
-            <div class="right-column">
-                <p>Welcome! I am a PhD candidate in Finance at Renmin University of China.</p>
-
-                <p>My research explores the intersections of Corporate Finance and Political Economics, with a particular focus on the Chinese economy and its historical and institutional dimensions.</p>
-
-                <ul class="job-market-list">
-                    <li style="color: #cc0000;">I am on the 2024-2025 job market.</li>
-                    <li><strong>Job Market Paper:</strong> Coalitions, Retaliation, and Whistleblowing: Evidence from Memorials of Qing China</li>
-                </ul>
-            </div> 
-        </div>
+    <main class="teaching-content">
+        <section>
+            <h2 class="teaching-position">Teaching Assistant, Renmin University of China</h2>
+            <ul class="course-list">
+                <li class="course-item">
+                    <span class="course-year">2021-2024</span>
+                    <span class="course-name">Corporate Finance (Undergraduate)</span>
+                </li>
+                <li class="course-item">
+                    <span class="course-year">2022-2023</span>
+                    <span class="course-name">Corporate Governance (Graduate)</span>
+                </li>
+                <li class="course-item">
+                    <span class="course-year">2024</span>
+                    <span class="course-name">Mergers and acquisitions (Graduate)</span>
+                </li>
+                <li class="course-item">
+                    <span class="course-year">2022</span>
+                    <span class="course-name">Principles of Economics (MBA)</span>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <script>
@@ -231,4 +213,4 @@
     }
     </script>
 </body>
-</html>
+</html> 
