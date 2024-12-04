@@ -152,6 +152,8 @@
 
         .paper {
             margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e5e7eb;
         }
         
         .coauthor {
@@ -171,6 +173,12 @@
         .publication-venue {
             color: rgb(82, 107, 141);
             font-style: italic;
+        }
+
+        /* 每个section的最后一个paper不需要分隔线 */
+        section:last-child .paper:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
         }
     </style>
 </head>
@@ -199,6 +207,7 @@
                 <h3 class="paper-title">
                     <a href="#">Coalitions, Retaliation, and Whistleblowing: Evidence from Memorials of Qing China</a>
                 </h3>
+                <div class="coauthor">with Meng Miao, thomas one</div>
                 <div class="abstract">
                     <span class="abstract-label">Abstract: </span>
                     Whistleblowing by senior local officials is pivotal for monitoring official behavior and suppressing corruption. Yet, the act of reporting is a strategic decision, entangled with complex considerations such as the risk of retaliation by those being reported and the gains from collusion. Despite its importance, there's a notable gap in research on the strategic behavior of whistleblowers. This paper taps into historical evidence from Qing China's memorials, which served as a confidential channel between the emperor and high-ranking local officials. Our focus is on memorials concerning natural disasters, specifically investigating whether officials obligated to report such disasters immediately would instead choose to form alliances to withhold information. We introduce a theoretical model to examine how coalitions among top local officials like governors and viceroys influence the whistleblowing. The model suggests that local officials are prone to underreporting when they are further from the years of reassignment or when they expect more collaboration opportunities in the future. A critical determinant in an official's decision to disclose disaster information is the fear of peer retaliation; The more easily identifiable the whistleblower or the higher and politically stronger the position of their peers, the more likely underreporting becomes. Using data from memorials between 1723 and 1909 during the Qing dynasty, our empirical analysis corroborates our hypothesis: officials more distant from reassignment years tend to underreport disasters, with the probability of underreporting increasing by 2.5% for each year further from evaluation. Subsequent analysis dismisses other potential reasons for underreporting, including officials seeking personal gain from disaster relief or considering minor disasters unworthy of reporting, thus reinforcing the credibility of our conclusions. Our paper also highlights the consequences of the absence of whistleblowers: namely, more famines and a greater number of popular uprisings.
@@ -247,18 +256,26 @@
             <h2 class="section-title">Publications</h2>
             <div class="paper">
                 <h3 class="paper-title">
-                    <a href="#">Property Rights, Political Connections, and Corporate Investment</a>
+                    <a href="https://doi.org/10.1093/rof/rfad029">Property Rights, Political Connections, and Corporate Investment</a>
                 </h3>
-                <div class="coauthor">with Meng Miao, Colin Xu and Dragon Yongjun Tang</div>
-                <div class="publication-venue">Review of Finance, 2024</div>
+                <div class="coauthor">with Meng Miao, Colin Xu and Dragon Yongjun Tang | Review of Finance, 2024</div>
+                <!-- <div class="publication-venue"></div> -->
+                <div class="abstract">
+                    <span class="abstract-label">Abstract: </span>
+                    We study the impact of an urban land titling program on firm investment in Shenzhen, China. We find that this program increased the investment rate for titling firms, but this positive effect only holds for politically connected firms. Further analysis suggests that the titling effect is more pronounced for those titling firms associated with greater expropriation risk. During program implementation, the connected titling firms increased their investment perhaps because, as observed, they experienced fewer disputes than non-connected titling firms.
+                </div>
             </div>
 
             <div class="paper">
                 <h3 class="paper-title">
-                    <a href="#">风险投资的政府背景与公司IPO效率</a>
+                    <a href="https://kns.cnki.net/kcms2/article/abstract?v=ufuULlVWCsNiddn2meBM4IH462rWHv6BBmQXWMaJ2eiioQjGVugr3-Pk2QWf6IdqdD6XsqT4F0t1cJUqY9rX5jJcRRn9Vzmvy31W9obqobhCcwP2u9VgYFe4yjMEJXt_d8wDSsl6vdxsInmnOYX-jLHZTnPVwtv8LmBOWR03NNU=&uniplatform=NZKPT">风险投资的政府背景与公司IPO效率</a>
                 </h3>
                 <div class="coauthor">与苗萌、左正禹</div>
-                <div class="publication-venue">系统工程理论与实践</div>
+                <div class="publication-venue">系统工程理论与实践, 2023</div>
+                <div class="abstract">
+                    <span class="abstract-label">Abstract: </span>
+                    作为我国资本市场发事前监管的重要环节，股票发行核准制度对上市公司进行了筛选，但也增加了公司上市融资的隐性成本。本文基于2010-2020年经核准制申请首发上市的公司微观数据，实证检验了风险投资的政府背景对公司上市时长的影响。研究结果表明：有政府背景的风险投资能缩短被投企业的上会等待期5个月左右，提升了公司的上市效率。当风险投资的关联政府级别更高、对企业持股比例更大时，政府背景的影响程度更强。机制分析发现，在针对发行审核的政策后和审核委员面临临时聘期间的时期，该影响减弱，表明政府背景风险投资是通过发审委对关联企业的偏袒效应而发挥作用。该现象不能被信息不对称的缓解，以及公司创新或盈利能力的提升所解释。本文的研究结论对于IPO注册制改革具有参考价值。
+                </div>
             </div>
         </section>
     </main>
