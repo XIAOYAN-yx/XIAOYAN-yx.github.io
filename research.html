@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Xiao Yan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'HanChanJinShuSong';
+            src: url('寒蝉锦书宋.otf') format('truetype');
+        }
+
+        body {
+            font-family: 'HanChanJinShuSong', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: rgb(55, 65, 81);
+        }
+        
+        .header {
+            background-color: white;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-title {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: rgb(82, 107, 141);
+            font-weight: normal;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(82, 107, 141);
+            padding: 0.5rem;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: #1a73e8;
+        }
+
+        .research-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .page-title {
+            color: rgb(82, 107, 141);
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 2rem;
+            margin: 0;
+            background-color: #e5e7eb;
+            font-weight: normal;
+        }
+
+        .section-title {
+            color: rgb(82, 107, 141);
+            font-size: 1.8rem;
+            margin: 2rem 0;
+            font-weight: normal;
+        }
+
+        .paper-title {
+            color: rgb(82, 107, 141);
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            text-decoration: none;
+        }
+
+        .paper-title a {
+            color: rgb(82, 107, 141);
+            text-decoration: none;
+        }
+
+        .paper-title a:hover {
+            text-decoration: underline;
+        }
+
+        .abstract {
+            margin: 1rem 0;
+            text-align: justify;
+        }
+
+        .abstract-label {
+            font-weight: bold;
+            display: inline;
+        }
+
+        .presentations {
+            margin-top: 1rem;
+            color: rgb(82, 107, 141);
+        }
+
+        .menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: rgb(82, 107, 141);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .menu-button {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+                border-bottom: 1px solid #eaeaea;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links a {
+                padding: 0.5rem 2rem;
+            }
+        }
+
+        .paper {
+            margin-bottom: 2rem;
+        }
+        
+        .coauthor {
+            margin: 0.5rem 0;
+            color: rgb(82, 107, 141);
+        }
+        
+        .coauthor a {
+            color: rgb(82, 107, 141);
+            text-decoration: none;
+        }
+        
+        .coauthor a:hover {
+            text-decoration: underline;
+        }
+        
+        .publication-venue {
+            color: rgb(82, 107, 141);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="nav-title">Xiao Yan</a>
+            <button class="menu-button" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="research.html">Research</a>
+                <a href="index.html#teaching">Teaching</a>
+                <a href="cv.pdf">CV (pdf)</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="page-title">Research</h1>
+
+    <main class="research-content">
+        <section>
+            <h2 class="section-title">Job Market Paper</h2>
+            <div class="paper">
+                <h3 class="paper-title">
+                    <a href="#">Coalitions, Retaliation, and Whistleblowing: Evidence from Memorials of Qing China</a>
+                </h3>
+                <div class="abstract">
+                    <span class="abstract-label">Abstract: </span>
+                    Whistleblowing by senior local officials is pivotal for monitoring official behavior and suppressing corruption. Yet, the act of reporting is a strategic decision, entangled with complex considerations such as the risk of retaliation by those being reported and the gains from collusion. Despite its importance, there's a notable gap in research on the strategic behavior of whistleblowers. This paper taps into historical evidence from Qing China's memorials, which served as a confidential channel between the emperor and high-ranking local officials. Our focus is on memorials concerning natural disasters, specifically investigating whether officials obligated to report such disasters immediately would instead choose to form alliances to withhold information. We introduce a theoretical model to examine how coalitions among top local officials like governors and viceroys influence the whistleblowing. The model suggests that local officials are prone to underreporting when they are further from the years of reassignment or when they expect more collaboration opportunities in the future. A critical determinant in an official's decision to disclose disaster information is the fear of peer retaliation; The more easily identifiable the whistleblower or the higher and politically stronger the position of their peers, the more likely underreporting becomes. Using data from memorials between 1723 and 1909 during the Qing dynasty, our empirical analysis corroborates our hypothesis: officials more distant from reassignment years tend to underreport disasters, with the probability of underreporting increasing by 2.5% for each year further from evaluation. Subsequent analysis dismisses other potential reasons for underreporting, including officials seeking personal gain from disaster relief or considering minor disasters unworthy of reporting, thus reinforcing the credibility of our conclusions. Our paper also highlights the consequences of the absence of whistleblowers: namely, more famines and a greater number of popular uprisings.
+                </div>
+                <div class="presentations">Presentations: AEA2025</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Working Papers</h2>
+            <div class="paper">
+                <h3 class="paper-title">
+                    <a href="#">Broker Networks, Collusion, and the Failure of Pricing Efficiency in China's IPO Market</a>
+                </h3>
+                <div class="coauthor">with Meng Miao, <a href="https://truan.github.io/">Tianyue Ruan</a></div>
+                <div class="abstract">
+                    <span class="abstract-label">Abstract: </span>
+                    We present evidence of widespread collusion among institutional investors in China's IPO auctions, identified through identical bids that defy reasonable pricing formulas. The registration-based IPO system's rule to eliminate the highest bids exacerbates these coordinated bidding behaviors. Such collusion results in increased IPO underpricing and reduced stock price informativeness, ultimately discouraging new entrants to the IPO auctions.
+                </div>
+            </div>
+
+            <div class="paper">
+                <h3 class="paper-title">
+                    <a href="#">Unrest-Driven Distortion: Evidence from Government Intervention in Securities Regulation</a>
+                </h3>
+                <div class="coauthor">with Meng Miao, Chenyan Xiong</div>
+                <div class="abstract">
+                    <span class="abstract-label">Abstract: </span>
+                    This study examines decision-making distortions in the Chinese government under collective movement pressures, focusing on how local governments influence the China Securities Regulatory Commission (CSRC) to impose lenient penalties on publicly listed companies. Our empirical analysis reveals a significant negative correlation between the frequency of worker movements and the severity of penalties, indicating that the CSRC tends to be more lenient in regions experiencing social unrest. This research highlights the trade-offs local governments face between maintaining social stability and promoting market efficiency.
+                </div>
+            </div>
+
+            <div class="paper">
+                <h3 class="paper-title">
+                    <a href="#">Firm Innovation and Social Security Contribution Reform: Evidence from Agency Shifts in China</a>
+                </h3>
+                <div class="coauthor">with LingTian Bu</div>
+                <div class="abstract">
+                    <span class="abstract-label">Abstract: </span>
+                    This paper examines corporate decision-making regarding the trade-offs between human capital and technological factors under conditions of limited resources. Utilizing the social security contribution reform as a natural experiment, we find that investment in human capital effectively crowds out innovation output. Internal financing constraints emerge as a critical mechanism: firms with limited internal funds experienced a 63.5% drop in patent applications following the reform, whereas those with sufficient internal resources were able to mitigate this negative impact.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Publications</h2>
+            <div class="paper">
+                <h3 class="paper-title">
+                    <a href="#">Property Rights, Political Connections, and Corporate Investment</a>
+                </h3>
+                <div class="coauthor">with Meng Miao, Colin Xu and Dragon Yongjun Tang</div>
+                <div class="publication-venue">Review of Finance, 2024</div>
+            </div>
+
+            <div class="paper">
+                <h3 class="paper-title">
+                    <a href="#">风险投资的政府背景与公司IPO效率</a>
+                </h3>
+                <div class="coauthor">与苗萌、左正禹</div>
+                <div class="publication-venue">系统工程理论与实践</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
+</body>
+</html> 
